@@ -1,1 +1,1 @@
-echo "Positive or negative"
+echo "Friday's task"
