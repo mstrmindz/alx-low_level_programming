@@ -1,10 +1,18 @@
-#include <stdio.h>
-int main() {
-  int n, i;
-  printf("Enter an integer: ");
-  scanf("%d", &n);
-  for (i = 1; i <= 10; ++i) {
-    printf("%d * %d = %d \n", n, i, n * i);
-  }
-  return 0;
+#include "main.h"
+
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_times_table(3);
+    _putchar('\n');
+    print_times_table(5);
+    _putchar('\n');
+    print_times_table(98);
+    _putchar('\n');
+    print_times_table(12);  
+    return (0);
 }
