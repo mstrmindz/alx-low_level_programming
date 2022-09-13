@@ -1,29 +1,22 @@
 #include <stdio.h>
-int main() {
+/**
+ *main -program execution starts here
+ *Description: prints all the multiples of 3 and 5 and the sums it.
+ *Return: 1 or 0 to signify success or failuer
+ */
+int main(void)
+{
+	int counter, sum;
 
-  int i, n;
+	sum = 0;
+	for (counter = 1; counter < 1024; counter++)
+	{
+		if (counter % 3 == 0 || counter % 5 == 0)
+		{
+			sum += counter;
+		}
+	}
+	printf("%d\n", sum);
 
-  // initialize first and second terms
-  int t1 = 0, t2 = 1;
-
-  // initialize the next term (3rd term)
-  int nextTerm = t1 + t2;
-
-  // get no. of terms from user
-  printf("Enter the number of terms: ");
-  scanf("%d", &n);
-
-  // print the first two terms t1 and t2
-  printf("Fibonacci Series: %d, %d, ", t1, t2);
-
-  // print 3rd to nth terms
-  for (i = 3; i <= n; ++i) {
-    printf("%d, ", nextTerm);
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
-  }
-
-  return 0;
+	return (0);
 }
-
