@@ -1,11 +1,10 @@
-#include "main.h"
-/**
- * print_times_table - Entry point
- * @n: input
- * Return: Always 0 (Success)
- */
-void print_times_table(int n)
-{
-
-	return (0);
+#include <stdio.h>
+int main() {
+  int n, i;
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+  for (i = 1; i <= 10; ++i) {
+    printf("%d * %d = %d \n", n, i, n * i);
+  }
+  return 0;
 }
